@@ -1,28 +1,424 @@
-.navbar {
- 
+         /* Reset default styles */
+        body, html {
+          margin: 0;
+          padding: 0;
+        }
+         /* start-navbar */
+          .logo-small {
+            width: 40px; /* Atur lebar logo sesuai kebutuhan */
+            height: auto; /* Mempertahankan aspek rasio gambar */
+          }
+
+          .navbar-nav {
+                      margin: auto;
+                      height: 100px;
+                  }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .nav-item .nav-link {
+            font-size: 1.1rem;
+            margin-right: 1rem;
+            display:inline-block  ;
+            border-radius: 10px;
+            height: 55px;
+            color: #fff;
+        }
+
+        .nav-item .nav-link:hover {
+            color: #00cc66;
+            background-color: antiquewhite;
+        } 
+
+        body {
+            padding-top: 66px; /* Sesuaikan dengan tinggi navbar */
+        }
+
+        #mainNav {
+            background-color: rgba(60, 57, 95, 0.7); 
+            box-shadow: none;
+            transition: background-color 0.3s, border-bottom 0.3s, box-shadow 0.3s;
+        }
+
+        .navbar.navbar-light.fixed-top.scrolled {
+            background-color: #fff; /* Ubah warna latar belakang saat discroll */
+            border-bottom: none; /* Hapus border saat discroll */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+            height: 100%;
+        }
+        /* end-navbar */
+
+        /* start-slide */
+        #slider{
+          margin-top: 64px;
+        }
+        .slider .slides h3,
+        .slider .slides h5,
+        .clients h3 {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+          
+        }
+        /* end-slider */
+
+        /* start-parallax */
+        #client {
+          height: 25%;
+        }
+
+        .parallax img {
+          filter: grayscale(1);
+          opacity: 0.5 !important;
+        }
+
+        .clients img {
+          max-width: 150px;
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
+        }
+        /* end-parrallax */
+      
+      /* Reset default styles */
+body, html {
+  margin: 0;
+  padding: 0;
 }
 
-.slider .slides h3,
-.slider .slides h5,
-.clients h3 {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+/* Gallery styles */
+.gallery-wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
 
-.parallax-container {
-  height: 20%;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.parallax img {
-  filter: grayscale(1);
-  opacity: 0.5 !important;
+.parent {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.clients img {
-  max-width: 150px;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  transition: transform 0.3s ease;
 }
 
-section,
-footer {
-  padding: 20px 0;
+.child:hover {
+  transform: scale(1.1);
 }
+
+.bg-one {
+  background-image: url(https://borobudurpark.com/wp-content/uploads/2017/02/borobudur5-768x512.jpg);
+}
+
+.bg-two {
+  background-image: url(https://borobudurpark.com/wp-content/uploads/2017/02/borobudur5-768x512.jpg);
+}
+
+.bg-three {
+  background-image: url(https://borobudurpark.com/wp-content/uploads/2017/02/borobudur5-768x512.jpg);
+}
+
+.bg-four {
+  background-image: url(https://borobudurpark.com/wp-content/uploads/2017/02/borobudur5-768x512.jpg);
+}
+
+.bg-five {
+  background-image: url(https://borobudurpark.com/wp-content/uploads/2017/02/borobudur5-768x512.jpg);
+}
+
+.bg-six {
+  background-image: url(https://borobudurpark.com/wp-content/uploads/2017/02/borobudur5-768x512.jpg);
+}
+
+.parent:hover .child {
+  transform: scale(1.1);
+}
+/* Popup or Lightbox styles */
+.popup-image {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.popup-image .popup-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border: 3px solid #fff;
+}
+
+.popup-image .close-popup {
+  position: absolute;
+  top: 45px;
+  right: 35px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.popup-image .close-popup:hover,
+.popup-image .close-popup:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+        /* Instagram */
+        .container.testi {
+          margin-top: 32px;
+        }
+
+        .text-testi span {
+          color: #121212;
+          font-size: 36px;
+          font-weight: 600;
+          line-height: 140%; /* 50.4px */
+        }
+
+        @media (max-width: 768px) {
+          .text-testi span {
+              font-size: 18px;
+          }
+        }
+
+        .testi .col-lg-2 a {
+          text-decoration: none;
+          color: #000;
+        }
+
+        .container.video-testi {
+          margin-top: 10px;
+        }
+
+        .video-testi {
+          width: 329px;
+          height: 259px;
+        }
+
+        .tiktok {
+          padding-right: 9px;
+        }
+
+        .panah {
+          position: absolute;
+          top: 50%;
+          left: 40%;
+          transform: translate(-100%, -10%);
+        }
+
+        .testimonial-box {
+          border-radius: 16px;
+          width: 335px;
+          height: 268px;
+          padding: 72px 70px 70px 80px;
+        }
+
+        .testimonial-box p {
+          font-size: 16px;
+          color: #5798ac;
+        }
+
+        .testimonial-box h5{
+          color: #121212;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 140%;
+        }
+
+        .testimonial-box h5 span{
+          color: #555;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 140%;
+        }
+
+        @media (max-width: 768px) {
+          .testimonial-box p {
+              font-size: 14px;
+          }
+
+          .testimonial-box {
+              padding: 30px;
+          }
+
+          .testimonial-box h5{
+              color: #121212;
+              font-size: 14px;
+          }
+
+          .testimonial-box h5 span{
+              font-size: 14px;
+          }
+
+          .row.testi .col-lg-2 strong {
+              display: none;
+          }
+
+          .panah {
+              display: none;
+          }
+
+          .col-lg-6 .testimonial-box {
+              margin-top: 24px;
+          }
+        }
+
+        @media (min-width: 992px) {
+          .container.testi {
+              margin-top: 156px;
+          }
+
+          .container.video-testi {
+              margin-top: 10px;
+          }
+
+          .row.testi {
+              margin-top: 100px;
+          }
+
+          .video-testi {
+              width: 240px;
+              height: 443px;
+          }
+
+          .testimonial-box {
+              width: 584px;
+              height: 436px;
+          }
+
+          .testimonial-box p {
+              font-size: 20px;
+          }
+        }
+
+        /* end-instagram */
+
+        /* start-contact */
+        .map-embed {
+          width: 100%; /* Lebar iframe 100% dari parent element */
+          height: 177px; /* Tinggi iframe 400px */
+          border: 0; /* Menghapus border iframe */
+          border-radius: 8px; /* Mengatur sudut border */
+        }
+        /* end-contact */
+
+        /* start-ticket */
+        .section-booking {
+          background-image: url(../img/slider/2.jpg);
+          background-size: cover;
+          background-position: center;
+          padding: 50px 0;
+        }
+
+        .section-booking .btn {
+          border: 1px solid #e9da05; /* Warna primary */
+          background-color: transparent;
+          color: #e9da05;
+          transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .section-booking .btn:hover {
+          background-color: #e9da05; /* Warna primary */
+          color: #fff;
+        }
+        /* end-ticket */
+
+        
+        /* start-footer */
+        section,
+        footer {
+          padding: 20px 0;
+        }
+        
+        .footer {
+          background-color: #333;
+        }
+
+        .footer h5 {
+          color: #fff;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        .footer p {
+          color: #ccc;
+        }
+
+        .footer a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        .footer a:hover {
+          text-decoration: underline;
+        }
+
+        .footer .fab {
+          font-size: 1.5rem;
+          margin-right: 10px;
+        }
+
+        .footer .fas {
+          margin-right: 10px;
+        }
+
+        .footer ul.list-inline {
+          padding-left: 0;
+        }
+
+        .footer ul.list-inline .list-inline-item {
+          margin-right: 10px;
+        }
+
+        .footer ul.list-unstyled {
+          padding-left: 0;
+        }
+
+        .footer ul.list-unstyled li {
+          margin-bottom: 8px;
+        }
+
+        .footer .text-center {
+          margin-top: 30px;
+          color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+          .footer .col-md-4 {
+              margin-bottom: 30px;
+          }
+        }
+        /* end-footer */
+
+
+
