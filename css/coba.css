@@ -1,0 +1,29 @@
+#services {
+    margin-top: 70px; /* Adjust the value as needed */
+  }
+  .navbar{
+    background-color: black;
+  }
+  .card {
+    height: 100%; /* Set height to ensure all cards are equal height */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+  }
+  @media (max-width: 768px){
+    .s12{
+      margin-top: 20px;
+    }
+    #services{
+      margin-top :  100px; ;
+    }
+  }
+  .card-body {
+    flex: 1; /* Grow to fill available space */
+  }
+  .card-img-top {
+    object-fit: cover; /* Ensure image covers its container without stretching */
+    height: 200px; /* Adjust the height as needed */
+  }
+  .btn {
+    margin-top: auto; /* Push the button to the bottom of the card */
+  }

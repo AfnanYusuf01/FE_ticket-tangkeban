@@ -6,13 +6,21 @@
          /* start-navbar */
           .logo-small {
             width: 40px; /* Atur lebar logo sesuai kebutuhan */
-            height: auto; /* Mempertahankan aspek rasio gambar */
-          }
+          height: auto; /* Mempertahankan aspek rasio gambar */
+        }
+        
 
-          .navbar-nav {
-                      margin: auto;
-                      height: 100px;
-                  }
+        .navbar-nav {
+                    margin: auto;
+                    height: 100px;
+                }
+        
+        @media (max-width: 768px){
+          #mainNav{
+            height: 100px;
+            
+          }
+        }
 
         .navbar-brand {
             font-size: 1.5rem;
@@ -55,6 +63,11 @@
         /* start-slide */
         #slider{
           margin-top: 64px;
+        }
+        @media (max-width: 768px){
+          #slider{
+            margin-top: 100px;
+          }
         }
         .slider .slides h3,
         .slider .slides h5,
@@ -103,13 +116,20 @@ body, html {
 
 .parent {
   height: 200px;
-  width: 200px;
+  width: 300px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 768px){
+  .parent{
+    margin-top: 15px;
+    margin-left: 30px;
+  }
 }
 
 .child {
@@ -329,6 +349,13 @@ body, html {
           height: 177px; /* Tinggi iframe 400px */
           border: 0; /* Menghapus border iframe */
           border-radius: 8px; /* Mengatur sudut border */
+        }
+        @media (max-width: 768px){
+          card-panel{
+            width: 117px;
+            display: block;
+
+          }
         }
         /* end-contact */
 

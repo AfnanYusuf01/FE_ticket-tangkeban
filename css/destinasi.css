@@ -1,0 +1,95 @@
+/* Gallery styles */
+.gallery-wrapper {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+  .text-uppercase{
+    margin-bottom: 20px;
+  }
+  a{
+    color: rgb(183, 210, 30);
+    font-size: larger;
+  } 
+  a:hover{
+    color: aliceblue;
+  } 
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+  }
+  
+  .ibu {
+    height: 200px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .align-self-end {
+    align-self: flex-end !important;
+  }
+  .child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: transform 0.3s ease;
+  }
+
+  @media (max-width: 768px){
+    .ibu{
+      width: 400px;
+      height: 100px;
+      margin-top: -10px;
+    }
+    .gallery-wrapper{
+      margin-top: 130px;
+    }
+  }
+  
+  .child:hover {
+    transform: scale(1.1);
+  }
+  
+  .bg-one {
+    background-image: url(../img/wahana/1.jpg);
+    background-position: center center;
+  }
+  
+  .bg-two {
+    background-image: url(../img/wahana/4.jpg);
+    background-position: center top;
+  }
+  
+  .bg-three {
+    background-image: url(../img/wahana/3.jpg);
+    background-position: center bottom;
+  }
+  
+  .bg-four {
+    background-image: url(../img/wahana/2.jpg);
+    background-position: center center;
+  }
+  
+  .bg-five {
+    background-image: url(../img/wahana/5.jpg);
+    background-position: center center;
+  }
+  
+  .bg-six {
+    background-image: url(../img/wahana/6.jpg);
+    background-position: center center;
+  }
+  
+  .ibu:hover .child {
+    transform: scale(1.1);
+  }
+  
